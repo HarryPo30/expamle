@@ -1,0 +1,36 @@
+import React from 'react';
+import { Container, Navbar, Nav } from 'react-bootstrap';
+
+const ThirdPage = () => {
+  return (
+    <div className="third-page">
+      <Navbar bg="light" variant="light" expand="lg" className="fixed-top">
+        <Container>
+          <Navbar.Brand href="#">Hello Hari!</Navbar.Brand>
+          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Collapse id="basic-navbar-nav">
+            <Nav className="me-auto">
+              <Nav.Link href="#">Inbound Items</Nav.Link>
+              <Nav.Link href="#">Approve Requests</Nav.Link>
+              <Nav.Link href="#">Fulfill Requests</Nav.Link>
+              <Nav.Link href="#">Manage Masters</Nav.Link>
+              <Nav.Link href="#">Inventory Reports</Nav.Link>
+            </Nav>
+            <Nav>
+              <Nav.Link href="#">Accounts</Nav.Link>
+              <Nav.Link href="#">Transactions</Nav.Link>
+              <Nav.Link href="#">Settings</Nav.Link>
+              <Nav.Link href="#">About</Nav.Link>
+            </Nav>
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
+      <Container className="mt-5 pt-5">
+        <h1>Third Blank Page</h1>
+        <p>This is the third blank page.</p>
+      </Container>
+    </div>
+  );
+};
+
+export default ThirdPage;
